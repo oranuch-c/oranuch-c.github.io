@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<title>
+		My HTML Web page :D
+	</title>
+
+	<meta charset="UTF-8">
+
+	<style type="text/css">
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333333;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		background-color: #111111;
+	}
+		p {
+			color: #333333;
+			font-family:courier;
+			font-size: 100%;
+		}
+
+		body {
+			background-image: url(bg.jpg);
+		}
+
+		<!--Education Table-->
+		table, th, td {
+    			border: 1px solid black;
+   		 	border-collapse: collapse;
+		}
+
+		th, td {
+  			padding: 5px;
+		}
+
+		table#t01 tr:nth-child(even) {
+    			background-color: #9999cc;
+		}
+
+		table#t01 tr:nth-child(odd) {
+  		 	background-color:#cccccc;
+		}
+
+		table#t01 th {
+  			background-color: #330066;
+			color: white;
+		}
+
+		<!--Links color state-->
+		a:link {
+		    color: #660099;
+		    background-color: transparent;
+		    text-decoration: none;
+		}
+		a:visited {
+		    color: #0000cc;
+		    background-color: transparent;
+		    text-decoration: none;
+		}
+		a:hover {
+		    color: #0099ff;
+		    background-color: transparent;
+		    text-decoration: underline;
+		}
+		a:active {
+		    color: #ff0099;
+		    background-color: transparent;
+		    text-decoration: underline;
+		}
+
+		footer {
+	    padding: 1em;
+	    color: white;
+	    background-color: black;
+	    clear: left;
+	    text-align: center;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<ul>
+	  <li><a href="#home">Home</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#education">Education</a></li>
+	  <li><a href="#talk">Talk</a></li>
+	</ul>
+
+	<br>
+
+	<form action="action_page.php">
+		<input type="text" name="username" placeholder="Username"><br>
+		<input type="password" name="password" placeholder="Password"><br>
+		<input type="submit" value="Login">
+	</form>
+
+	<center>
+	<h2 id="home" style="text-align:center; font-size:190%;">
+		<span style="background-color:#B4009E;color:#ffffff;"> 
+			My Profile
+		</span>
+	</h2>
+
+	<p title="I'm a beautiful girl ;P" style="font-family:courier;">
+		<!-- Emphasized formatting using the em element -->
+		<em>
+			Hello! I'm NuCH :)
+		</em>
+	</p>
+
+	<video width="310" height="200" autoplay align="center">
+		<source src="myVideo.mp4" type="video/mp4">
+	</video>
+
+	<br>
+
+	<button type="button" onclick="alert('Thank you ^^')">Like<3</button>
+
+	<br><br>
+
+	<form action="action_page.php">
+  	Select images: <input type="file" name="img" multiple>
+  <input type="submit">
+	</form>
+
+	<p style="text-align:center; font-size:180%;" >
+		<span style="color:red">O</span><small>RANUCH</small> &nbsp <span style="color:red">C</span><small>HAROENNAN</small>
+	</p>
+
+	<p  style="text-align:center;" >
+		<!-- insert quotation marks around the q element-->
+		<!-- Italic formatting using the i element-->
+		<q> <i>
+ 			We don't grow when things are easy<br>
+		  We grow when we face challenges.
+		</i> </q>
+	</p>
+
+</center>
+	<hr>
+
+	<br><br>
+	<center>
+		<a href="myImage.html">
+			<!--An image as a link-->
+			<img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t1.0-9/15941460_1399769076720599_7141567563003880109_n.jpg?oh=02726a2314cc72a9dcb27e14f9154654&oe=59047130"
+				alt="Profile Pic." width="310" height="200" align="center">
+		</a>
+
+		<p>
+			<small>click pic for more picture!!!</small>
+			<br><br>
+			<span style="color:red"><strong>Birthday:</strong></span> 16 January 1995
+		</p>
+	</center>
+
+	<h2 id="contact">
+		<b> <ins>
+			CONTACT
+		</b></ins>
+	</h2>
+
+	<div style="background-color:#9966ff;padding:20px;">
+		<p style="font-size:80%; ">
+			<!-- Formatting document author/owner information with the <address> element -->
+			<address>
+				Tel. : 0955546260<br>
+				Email : oranuch.char@gmail.com <br>
+				<!--Linking, using an absolute URL-->
+				<!--Removing the underline from links-->
+				<a href="mailto:oranuch.char@gmail.com?Subject=Hello%20again" target="_top" style="text-decoration:none">
+					&nbsp	&nbsp >>Send Mail<<
+				</a>
+				<br>
+				Address : 33/1 M.11 Uthai, Uthai, <br>
+				Ayutthaya, 13210, Thailand <br>
+	 			<a href="https://www.facebook.com/oranuch.charoennan" target="_blank" style="text-decoration:none">
+					&nbsp	&nbsp >>Facebook<<
+				</a>
+
+				<br>
+
+				<a href="https://www.instagram.com/nuch4816/" target="_blank" style="text-decoration:none">
+					&nbsp	&nbsp >>Instagrame<<
+				</a>
+
+			</address>
+
+		</p>
+	</div>
+
+	<hr>
+
+	<h2 id="education">
+		<b> <ins>
+		   	EDUCATION
+		</ins> </b>
+	</h2>
+
+	<table id="t01" style="width:100%">
+
+		<tr>
+			<th>
+				Years
+		  </th>
+			<th>
+				School
+		  </th>
+		</tr>
+
+		<tr>
+    	<td rowspan="3" style="text-align:center">
+				2014-2017
+		  </td>
+    	<td> <strong>
+				Kasetsart University Bangkhen Campus
+	    </strong> </td>
+		</tr>
+
+ 		<tr>
+   		<td>
+				&nbsp &nbsp	Bachelor of Computer Science
+			</td>
+    </tr>
+
+		<tr>
+    	<td>
+				&nbsp &nbsp	GPA: 2.99
+		  </td>
+    </tr>
+
+		<tr>
+  		<td style="text-align:center">
+				2010-2012
+  		</td>
+			<td>
+				Princess Chulabhorn's College Lopburi School
+		  </td>
+		</tr>
+
+		<tr>
+    	<td style="text-align:center">
+				2007-2009
+		  </td>
+    	<td>
+				Chomsurang Upatham School
+		  </td>
+  	</tr>
+	</table>
+
+	<hr>
+
+	<br>
+
+	<h2 id="talk">
+		<ins>TALK TO ME:)</ins>
+	</h2>
+
+	<form action="mailto:oranuch.char@gmail.com; action_page.php;" method="post" enctype="text/plain">
+		<select name="share">
+			<option value="public">Public</option>
+			<option value="private">Private</option>
+			<option value="friend" selected>Friend</option>
+		</select>
+		<br><br><br>
+		Name:<br>
+		<input type="text" name="name"><br>
+			E-mail:<br>
+		<input type="text" name="mail"><br>
+			Comment:<br>
+		<input type="text" name="comment" size="80" height="50"><br><br>
+
+		&nbsp &nbsp
+		<input type="submit" value="Send">
+		<input type="reset" value="Reset">
+	</form>
+	<br><br><br><br>
+
+	<!-- Formatting work title with the cite element -->
+	<footer><cite>
+		The HTML Web Page Created By Oranuch Charoennan 5610404703
+	</cite></footer>
+</body>
+</html>
