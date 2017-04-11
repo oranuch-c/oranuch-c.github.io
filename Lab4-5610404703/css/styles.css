@@ -1,0 +1,154 @@
+@font-face {
+  font-family: Itim-Regular;
+  src:url(../font/Itim-Regular.ttf);
+}
+
+@font-face {
+  font-family: torsilp-gimchi;
+  src:url(../font/torsilp-gimchi.ttf);
+}
+
+@font-face {
+  font-family: WDB_Bangna;
+  src:url(../font/WDB_Bangna.ttf);
+}
+
+@font-face {
+  font-family: waan-free_regular;
+  src:url(../font/waan-free_regular.ttf);
+}
+
+body {
+  font-family: Itim-Regular;
+  text-align: center;
+  background: url(../image/bg.gif) top left;
+  /*background: black;*/
+  font-size: 120%;
+}
+.header{
+    background-color: grey;
+    color: white;
+    padding: 30px;
+    /*background: url(../image/header.jpg) top left;*/
+}
+
+h2 {
+  text-align: center;
+  float: right;
+  margin: 0 0 10px 10px;
+  overflow: auto;
+}
+/*.content {
+    float: left;
+    padding: 15px;
+}*/
+#province_name {
+  text-align: center;
+  width: 100%
+}
+
+#slide{
+  float: left;
+}
+
+#showprovince {
+    /*clear: both;*/
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 20px;
+    background: white;
+    overflow: auto;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+#img_fname {
+  bottom: 5px;
+}
+
+#box {
+  height: 200px;
+  width:  200px;
+  background:  #fc3;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 200px;
+}
+#con_lb {
+  color: #2B3856;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.thing {
+  height:  200px;
+  width:  200px;
+  background:  #ac3;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 200px;
+  border-top-left-radius: 200px;
+
+}
+#submit{
+  background: #3090c7;
+  color: white;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+  font-size: 18px;
+  float: left;
+  width:100px;
+  /*margin-right: 50px;*/
+  margin-left: 90px;
+  box-shadow: 10px 10px 5px #888888;
+}
+#reset{
+  background: #3090c7;
+  color: white;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+  font-size: 18px;
+  float: left;
+  width:100px;
+  /*margin-right: 50px;*/
+  margin-left: 20px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 5px #888888;
+}
+.notification-bar {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.notification-bar a{
+  color: #fc3;
+}
+
+form {
+  background-color: #82cafa;
+  box-shadow: 10px 10px 5px #888888;
+  /*border-color: rgba(146, 230, 207, 0.08);
+  border-top: none;
+  border-left: none;*/
+  border-radius: 20px;
+  margin: 30px 10px 20px 50px;
+  /*border-width: 180px;*/
+  width: 300px;
+}
+
+input {
+  margin-top: 22px;
+  height: 25px;
+}
+
+select {
+  margin-bottom: 50px;
+}

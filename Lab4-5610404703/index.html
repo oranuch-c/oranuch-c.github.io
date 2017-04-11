@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Province</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>
+        <img src="image/thailand.png" id="img" alt="thai" ><br>
+        Thailand
+      </h1>
+    </div>
+
+    <div class="notification-bar">Hello! Welcome ^^</div>
+
+    <!-- <div id="box">a box</div>
+    <div class="thing">a thing</div> -->
+    <div class="content" id="slide">
+      <form id="form" name="Form">
+        <br>
+        <label id="con_lb">Contact Us</label>
+        <br>
+        <br>
+        <img src="image/user.png" id="img_fname" alt="First name" width="25" height="25"><br>
+        <!-- <label id="firstname">First name</label> -->
+        <input type="text" name="First name" placeholder="First name">
+        <br>
+        <!-- <label id="lastname">last name</label> -->
+        <input type="text" name="Last name" placeholder="Last name">
+        <br>
+        <img src="image/birthday.png" id="img_bd" alt="Birthday" width="25" height="25">
+        <!-- <label id="birthday">Birthday</label> -->
+        <input type="date" name="dat" id="dat" placeholder="xx/xx/xxxx">
+        <br>
+        <input type="radio" name="gender" id="male" value="male" checked> Male
+        <input type="radio" name="gender" id="female" value="female"> Female<br>
+        <br>
+        <label id="province_label">จังหวัด:</label><br>
+        <select id="province" name="Province"></select>
+      </form>
+
+      <button type="submit" id="submit">Submit</button>
+      <button type="reset" id="reset">Reset</button>
+    </div>
+
+    <div id="showprovince">
+      <center>
+        <br>
+        <br>
+        <h2 id="province_name"></h2>
+        <br>
+        <div class="sign"><img src="image/welcome.png" id="sign" width="250" height="250"/></div>
+        <p id="show">ยังไม่ได้เลือกจังหวัด</p>
+        <br>
+      </center>
+    </div>
+
+    <!-- Load the CDN first -->
+    <script src = "//code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- if CDN fails to load, seare up the local version -->
+    <script>window.jQuery || document.write('<script src="jquery-3.1.1.min.js"><\/script>');</script>
+    <script src = "js/script.js"></script>
+
+  </body>
+  <!-- <div class="footer">
+    <p2>By: Oranuch Charoennan</p2>
+  </div> -->
+</html>
