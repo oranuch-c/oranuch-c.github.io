@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" type="text/css" href="Lab3-style.css">
+  <script src="Lab3-script.js"></script>
+</head>
+
+
+<body onload="checkCookie()">
+<h>
+  FORM
+</h>
+
+<form id="form" name="Form" onsubmit="return validateForm()" method="post">
+  <table cellspacing="8" cellpadding="4" border="0">
+    <tr>
+      <td align="right">
+        First name*:
+      </td>
+      <td>
+        <input type="text" name="First name" placeholder="First name">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Last name*:
+      </td>
+      <td>
+        <input type="text" name="Last name" placeholder="Last name">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+          House number*:
+      </td>
+      <td>
+        <input type="text" name="House number" id="house_no">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Street:
+      </td>
+      <td>
+        <input type="text" name="Street" id="street">
+      </td>
+    </tr>
+
+    <tr2>
+    <tr>
+      <td align="right">
+        City*:
+      </td>
+      <td>
+        <input type="text" name="City" id="city">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Province*:
+      </td>
+      <td>
+        <input type="text" name="Province" id="province">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Zipcode*:
+      </td>
+      <td>
+        <input type="text" name="Zipcode" id="zipcode" placeholder="xxxxx">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Phone number:
+      </td>
+      <td>
+        +662 <input type="tel" name="Phone number" placeholder="-xxx-xxx">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Cell phone Number*:
+      </td>
+      <td>
+        +66 <input type="tel" name="Cell phone number" placeholder="xx-xxx-xxx">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Birthday*:
+      </td>
+      <td>
+        <input type="text" id="birthday" name="Birthday">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Birthday of Week*:
+      </td>
+      <td>
+        <select required id="bd_of_week" name="Birthday of Week">
+          <option value=""></option>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Citizenship number*:
+      </td>
+      <td>
+        <input type="text" name="Citizenship number" placeholder="x-xxxx-xxxxx-xx-x">
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Zodiac Sign*:
+      </td>
+      <td>
+        <select id="zodiac_sign" name="Zodiac Sign">
+          <option value=""></option>
+          <option value="capricorn">Capricorn</option>
+          <option value="aquarius">Aquarius</option>
+          <option value="pisces">Pisces</option>
+          <option value="aries">Aries</option>
+          <option value="taurus">Taurus</option>
+          <option value="gemini">Gemini</option>
+          <option value="cancer">Cancer</option>
+          <option value="leo">Leo"</option>
+          <option value="virgo">Virgo</option>
+          <option value="libra">Libra</option>
+          <option value="scorpio">Scorpio</option>
+          <option value="sagittarius">Sagittarius</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td align="right">
+        Zodiac Year*:
+      </td>
+      <td>
+        <select required id="zodiac_year" name="Zodiac Year">
+          <option value=""></option>
+          <option value="rat">Rat</option>
+          <option value="ox">Ox</option>
+          <option value="tiger">Tiger</option>
+          <option value="rabbit">Rabbit</option>
+          <option value="dragon">Dragon</option>
+          <option value="snake">Snake</option>
+          <option value="horse">Horse</option>
+          <option value="goat">Goat</option>
+          <option value="monkey">Monkey</option>
+          <option value="rooster">Rooster</option>
+          <option value="dog">Dog</option>
+          <option value="pig">Pig</option>
+        </select>
+      </td>
+    </tr>
+
+  </table>
+</form>
+
+<br>
+
+<form id="button">
+  <input type="button" onclick="saveForm()"value="Save">
+  <input type="button" onclick="resetForm()" value="Cancel">
+  <!-- <input type="button" onclick="checkCookie()" value="Cancel"> -->
+  <input type="button" onclick="submitForm()" value="Submit">
+</form>
+
+<p id="show"></p>
+
+<footer>
+  By: Oranuch Charoennan 5610404703 &nbsp &nbsp
+</footer>
+
+</body>
+</html>

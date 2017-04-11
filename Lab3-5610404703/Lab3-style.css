@@ -1,0 +1,64 @@
+body {
+  border-style: outset;
+  font-family:Verdana;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 160px;
+  padding-top: 50px;
+  color: #707B7C;
+}
+
+h {
+  margin-left: 350px;
+  font-size: 25px;
+  color: #990000;
+}
+
+form tr{
+  clear: left;
+  width: 700px;
+  text-align: left;
+  margin-right: 100px
+}
+
+form td{
+  padding-left: 20px;
+}
+
+form input, select {
+  width: 400px;
+  height: 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-style: outset;
+}
+
+[type="button"] {
+  clear: center;
+  margin: 20px 0 0 120px;
+  width: 100px;
+  height: 40px;
+  font-size:18px;
+  border-style: outset;
+}
+
+p {
+  margin-left: 70px;
+  font-family:Verdana;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer {
+  font-family:Verdana;
+	text-align: right;
+	color:#fff;
+	background-color: #000000;
+	padding-top:16px;
+	padding-bottom:16px;
+  margin-bottom: 20px;
+}
